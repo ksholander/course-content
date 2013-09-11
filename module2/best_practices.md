@@ -39,3 +39,39 @@ Brackets contains a lint checker for validating code
 ### [Web Stndards Group mailing list](http://webstandardsgroup.org/mail)
 ### [WebDesign-L mailing list](http://www.webdesign-l.com)
 ### [Doctype Q&A website](http://doctype.com/)
+
+# CSS Best Practices
+
+## Use external style sheets
+External style sheets should be used for achieving a consistent look amongst
+all pages within a site
+Style sheet files should end in .css
+
+## Internal style sheets
+Internal style sheets should only be used to specify styles of elements that 
+are unique within a particular page. This should not occur very often.
+
+## Inline styles
+Inline styles should be used very infrequently. They are considered a poor
+coding practice because of the difficulty in maintaining and updating them
+as page layouts change.
+
+## Style formatting
+To keep the style sheet clean and readable, styles should be written with
+the selector on a line by itself. Each declaration should also be written
+on its own line. Comments can be added using '/*' and '*/' delineators.
+```
+p {
+    font-size : 0.8em;
+    font-weight : normal;
+    font-family : "Times New Roman", Serif;
+  }
+
+/* This is a comment */
+h1 {
+    font-size : 1.2em;
+    font-weight : bold;
+    font-family : Arial, ComicSans, Sans;
+    font-decoration : underline;
+  }
+```
