@@ -10,13 +10,21 @@
 [Example wordpress site](http://www.spencersvoice.com)
 
 ## CSS Overview
-### The content is marked-up in HTML to specify the semantic intent of each of the elements of the document
-### Elements can be grouped into classes, or marked with a unique id
-### CSS rules define the layout and appearance
-### A rule is a list of style declarations that is assigned to an element or elements within the HTML
-### Style declarations consist of property-value pairs. Properties are items such as fonts, colors, margins, positions, etc. The declarations define how the style will appear in the browser
-### Rules are mapped to elements in the HTML using selectors.
-### Syntax of a CSS rule:
+
+The content is marked-up in HTML to specify the semantic intent of each of the elements of the document
+
+Elements can be grouped into classes, or marked with a unique id
+
+CSS rules define the layout and appearance
+
+A rule is a list of style declarations that is assigned to an element or elements within the HTML
+
+Style declarations consist of property-value pairs. Properties are items such as fonts, colors, margins, 
+positions, etc. The declarations define how the style will appear in the browser
+
+Rules are mapped to elements in the HTML using selectors.
+
+Syntax of a CSS rule:
 ```
 selector { property : value; property: value; }
 ```
