@@ -12,22 +12,30 @@ Defines the behavior of the form
 input elements
 ...
 </form>
+```
 
 ### Form Attributes
 
 name   - provides a name for the form
+
 id     - id of form element
+
 action - specifies the action to be performed when the form is submitted. The 
          action should be a URL of a handler on a server that can accept the 
          submitted data
+         
 method - GET or POST
+
 onsubmit - a piece of javascript code that should be executed before the 
            form is submitted. Form will only be submitted if the return value
            from the onsubmit handler is true. Useful for validating input 
            before sending to the handler
+           
 accept-charset - charset that is allowed (utf8)
+
 enctype  - encoding method of the POST data (text/plain, multipart/form-data, 
            application/x-www-form-urlencoded)
+           
 autocomplete - on/off - new for HTML5
 
 #### GET
@@ -48,12 +56,19 @@ Form submissions with POST cannot be bookmarked
 ## Input types
 
 Inputs define a field where users can enter data
+
 Only inputs within a form are submitted when the form is submitted
+
 (New for HTML5 - the form attribute can specify one or more form_ids which
 the input belongs to)
+
 Inputs come in many types depending on the information you are gathering
+
 Inputs must have a name attribute to define the property that is being set
+
 Inputs may have a value attribute to define a default value
+
+The new required attribute forces the user to enter a value before the form may be submitted
 
 ### button
 
@@ -144,3 +159,17 @@ A field for entering a url
 ### week (HTML5)
 
 A week and year control
+
+## Select
+
+Select allows for choosing one item from a pulldown selection list
+
+The option tag is used to define each of the items in the pulldown
+
+## Textarea
+
+Used to provide for a large amount of entered text
+
+## Submit
+
+A button whose action causes the form to be submitted
